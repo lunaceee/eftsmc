@@ -253,258 +253,6 @@ TSMC特惠課程
 
 
 
-<!-- <ul class="nav pull-right">
-<li><div class="linkbutton-component">
-<div class=" ">
-<a id="nav-parsys_customnavigation-9c6_cta-nav-button" class="btn btn-primary" href="../../oe-free-consultation/" target="_self">
-立即體驗
-</a>
-</div>
-<div class="parbase pageProviders">
-<script type="text/javascript" data="">
-( window.require || ( window.amdShim && window.amdShim.require ) || function(){} )
-([
-'$',
-'shared/lib/RSVP', 
-'shared/util/hub',
-'shared/util/state',
-'shared/util/registers/ActionProvider',
-'shared/util/registers/DataProvider',
-'shared/util/providers/data/state',
-'shared/util/providers/data/offerDate',
-'shared/util/providers/data/orderDate',
-'shared/util/providers/data/date',
-'shared/util/providers/data/directDebit'
-], function( $, RSVP, hub, state, ActionProvider, DataProvider, 
-stateDataProvider, 
-offerDateProvider, 
-orderDateProvider,
-dateProvider,
-directDebitProvider
-){
-'use strict';
-var PATH_HUB = 'components/pageProvider';
-var value = hub.peek(PATH_HUB);
-if ( value != null ) {
-return;
-}
-var provider = {
-id: 'javascript',
-type: 'page',
-actions: {
-'run': function (script) {
-window.eval(script)
-},
-}
-};
-ActionProvider.instance.register( provider );
-var provider = {
-id: 'scrollbar',
-type: 'page',
-actions: {
-'scroll': function (anchor) {
-var $el = $(anchor);
-var offset = $el.offset();
-var $scroll = null;
-var cur;
-var scrollTestAmount = 5;
-var scrollParam = {
-scrollTop: offset.top
-};
-if (document.scrollingElement != null) {
-$scroll = $(document.scrollingElement);
-}
-else {
-var tester = document.createElement('div');
-tester.style.height = '99999px';
-tester.style.position = 'absolute';
-tester.style.top = 0;
-tester.style.left = 0;
-tester.innerHTML = '1';
-document.body.appendChild(tester);
-if (document.documentElement.scrollTop > 0) {
-$scroll = $(document.documentElement);
-}
-else {
-cur = document.documentElement.scrollTop;
-document.documentElement.scrollTop += scrollTestAmount;
-if (document.documentElement.scrollTop !== cur) {
-document.documentElement.scrollTop-=scrollTestAmount;
-$scroll = $(document.documentElement);
-}
-}
-if (document.body.scrollTop > 0) {
-$scroll = $(document.body);
-}
-else {
-cur = document.body.scrollTop;
-document.body.scrollTop += scrollTestAmount;
-if (document.body.scrollTop !== cur) {
-document.body.scrollTop-=scrollTestAmount;
-$scroll = $(document.body);
-}
-}
-document.body.removeChild(tester);
-tester = null;
-}
-if ($scroll == null || $scroll.length <= 0) {
-$scroll = $('html,body');
-}
-if ($scroll.prop('scrollLeft') + window.innerWidth < offset.left ||
-$scroll.prop('scrollLeft') > offset.left + $el.width()) {
-scrollParam.scrollLeft = offset.left - (window.innerWidth - $el.width()) / 2;
-}
-$scroll.animate(scrollParam);
-}
-}
-};
-ActionProvider.instance.register( provider );
-var provider = {
-id: 'open',
-type: 'page',
-actions: {
-'open in same window': function (url) {
-window.open(url, '_self');
-},
-'open in new window': function (url) {
-window.open(url, '_blank');
-}
-}
-};
-ActionProvider.instance.register( provider );
-var URL_SCHOOL_ENTER = 'http://' + window.location.host + '/school/course/currentcourse/handler.aspx?entry=true';
-var URL_LOGIN_ENTER = 'http://' + window.location.host + '/content/englishtown/tw/zh/login';
-var provider = {
-id: 'checkout-page',
-type: 'page',
-actions: {
-'goto school': function () {
-location.href = URL_SCHOOL_ENTER;
-},
-'goto login': function () {
-location.href = URL_LOGIN_ENTER;
-}
-}
-};
-ActionProvider.instance.register( provider );
-var providerCalendar = {
-id: 'TEXT_CALENDAR_MONTH',
-value: function(){
-return function(index){
-var TEXT_CALENDAR_MONTH = [
-'\u4E00\u6708',
-'\u4E8C\u6708',
-'\u4E09\u6708',
-'\u56DB\u6708',
-'5\x20\u6708',
-'\u516D\u6708',
-'\u4E03\u6708',
-'\u516B\u6708',
-'\u4E5D\u6708',
-'\u5341\u6708',
-'\u5341\u4E00\u6708',
-'\u5341\u4E8C\u6708'
-];
-return TEXT_CALENDAR_MONTH[index];
-};
-}
-};
-DataProvider.instance.register( providerCalendar );
-// countries i18n text provider
-var providerMarketText = {
-id: 'TEXT_MARKET',
-value: function(){
-return function(index){
-var TEXT_MARKET = {'fk':'Falkland\x20Islands','fm':'Micronesia','fj':'Fiji','meast':'Middle\x20East','fi':'Finland','er':'Eritrea','es':'Spain','et':'Ethiopia','ee':'Estonia','ec':'Ecuador','eh':'Western\x20Sahara','eg':'Egypt','do':'Dominican\x20Republic','dm':'Dominica','dz':'Algeria','hk':'Hong\x20Kong','hn':'Honduras','hm':'Heard\x20Island\x20and\x20McDonald\x20Islands','gp':'Guadeloupe','gq':'Equatorial\x20Guinea','gr':'Greece','gs':'South\x20Georgia\x20and\x20the\x20South\x20Sandwich\x20Islands','gt':'Guatemala','gu':'Guam','gw':'Guinea\x20Bissau','gy':'Guyana','gb':'United\x20Kingdom','ga':'Gabon','gg':'Guernsey','gf':'French\x20Guiana','ge':'Georgia','gd':'Grenada','gi':'Gibraltar','gh':'Ghana','gn':'Guinea','gm':'Gambia','gl':'Greenland','fr':'France','fo':'Faroe\x20Islands','jo':'Jordan','jp':'Japan','jm':'Jamaica','je':'Jersey','is':'Iceland','ir':'Iran','it':'Italy','iq':'Iraq','in':'India','io':'British\x20Indian\x20Ocean\x20Territory','il':'Israel','im':'Isle\x20of\x20Man','id':'Indonesia','ie':'Ireland','hu':'Hungary','ht':'Haiti','hr':'Croatia','lr':'Liberia','ls':'Lesotho','lt':'Lithuania','li':'Liechtenstein','lk':'Sri\x20Lanka','lb':'Lebanon','la':'Laos','lc':'Saint\x20Lucia','kw':'Kuwait','ky':'Cayman\x20Islands','kz':'Kazakhstan','kn':'Saint\x20Kitts','km':'Comoros','kr':'Korea','kp':'North\x20Korea','kg':'Kyrgyzstan','ke':'Kenya','kh':'Cambodia','ki':'Kiribati','ax':'\xC5land\x20Islands','aw':'Aruba','au':'Australia','at':'Austria','as':'American\x20Samoa','ar':'Argentina','aq':'Antarctica','ao':'Angola','am':'Armenia','al':'Albania','bi':'Burundi','bj':'Benin','bg':'Bulgaria','bh':'Bahrain','be':'Belgium','bf':'Burkina\x20Faso','bd':'Bangladesh','ba':'Bosnia\x20Herzegovina','bb':'Barbados','az':'Azerbaijan','af':'Afghanistan','ag':'Antigua\x20\x26\x20Barbuda','ai':'Anguilla','ad':'Andorra','ae':'United\x20Arab\x20Emirates','cw':'Curacao','cv':'Cape\x20Verde','cu':'Cuba','cz':'Czech\x20Republic','cy':'Cyprus','cx':'Christmas\x20Island','co':'Colombia','cn':'China','cm':'Cameroon','cl':'Chile','cr':'Costa\x20Rica','de':'Germany','dk':'Denmark','dj':'Djibouti','bt':'Bhutan','bs':'Bahamas','bv':'Bouvet\x20Island','bw':'Botswana','bz':'Belize','by':'Belarus','bl':'Saint\x20Barth\xE9lemy','bn':'Brunei\x20Darussalam','bm':'Bermuda','bo':'Bolivia','br':'Brazil','bq':'Bonaire,\x20Sint\x20Eustatius\x20and\x20Saba','cd':'DR\x20Congo','cf':'Central\x20African\x20Republic','cg':'Congo','ch':'Switzerland','ci':'Cote\x20D\x27ivoire','ck':'Cook\x20Islands','ca':'Canada','cc':'Cocos\x20Islands','us':'United\x20States','uy':'Uruguay','uz':'Uzbekistan','ua':'Ukraine','ug':'Uganda','um':'United\x20States\x20Minor\x20Outlying\x20Islands','vu':'Vanuatu','va':'Vatican','vc':'Saint\x20Vincent','ve':'Venezuela','vg':'Virgin\x20Islands\x20\x28UK\x29','vi':'Virgin\x20Islands\x20\x28US\x29','vn':'Vietnam','ws':'Samoa','wf':'Wallis\x20and\x20Futuna','za':'South\x20Africa','yt':'Mayotte','ye':'Yemen','zw':'Zimbabwe','zm':'Zambia','lu':'Luxembourg','lv':'Latvia','ly':'Libya','ma':'Morocco','mc':'Monaco','rola':'Rest\x20of\x20Latin\x20America','md':'Moldova','me':'Montenegro','mg':'Madagascar','mf':'Saint\x20Martin\x20\x28French\x20part\x29','mh':'Marshall\x20Islands','mk':'Macedonia','mm':'Myanmar','ml':'Mali','mo':'Macau','mn':'Mongolia','mq':'Martinique','mp':'Northern\x20Mariana\x20Islands','ms':'Montserrat','mr':'Mauritania','mu':'Mauritius','mt':'Malta','mx':'Mexico','my':'Malaysia','mv':'Maldives','mw':'Malawi','mz':'Mozambique','na':'Namibia','ne':'Niger','nf':'Norfolk\x20Island','nc':'New\x20Caledonia','ni':'Nicaragua','ng':'Nigeria','nl':'Netherlands','nr':'Nauru','np':'Nepal','no':'Norway','nu':'Niue','nz':'New\x20Zealand','om':'Oman','pg':'Papua\x20New\x20Guinea','ph':'Philippines','pe':'Peru','pf':'French\x20Polynesia','pa':'Panama','pn':'Pitcairn','pm':'St.\x20Pierre','pl':'Poland','pk':'Pakistan','pw':'Palau','pt':'Portugal','ps':'Palestine','pr':'Puerto\x20Rico','py':'Paraguay','qa':'Qatar','row':'Rest\x20of\x20World','re':'R\xE9union','ru':'Russia','rs':'Serbia','rw':'Rwanda','ro':'Romania','si':'Slovenia','sh':'St.\x20Helena','sk':'Slovakia','sj':'Svalbard','se':'Sweden','sd':'Sudan','sg':'Singapore','sa':'Saudi\x20Arabia','sc':'Seychelles','sb':'Solomon\x20Islands','sx':'Sint\x20Maarten\x20\x28Dutch\x20part\x29','sy':'Syria','sz':'Swaziland','st':'Sao\x20Tome','sv':'El\x20Salvador','sr':'Suriname','ss':'South\x20Sudan','sl':'Sierra\x20Leone','sm':'San\x20Marino','sn':'Senegal','so':'Somalia','tl':'Timor\x2DLeste','tk':'Tokelau','tj':'Tajikistan','th':'Thailand','tg':'Togo','tf':'French\x20Southern\x20Territories','roe':'Rest\x20of\x20East','td':'Chad','tc':'Turks\x20and\x20Caicos\x20Islands','tz':'Tanzania','tw':'Taiwan','roa':'Rest\x20of\x20Asia','tv':'Tuvalu','tt':'Trinidad\x20and\x20Tobago','tr':'Turkey','to':'Tonga','tm':'Turkmenistan','tn':'Tunisia'};
-return TEXT_MARKET[index];
-};
-}
-};
-DataProvider.instance.register( providerMarketText );
-var providerLinkLogin = {
-id: 'LINK_LOGIN',
-value: function(){
-return URL_LOGIN_ENTER;
-}
-};
-DataProvider.instance.register( providerLinkLogin );
-var providerLinkSchool = {
-id: 'LINK_SCHOOL',
-value: function(){
-return URL_SCHOOL_ENTER;
-}
-};
-DataProvider.instance.register( providerLinkSchool );
-var providerMarketPhone = {
-id: 'MARKET_PHONE_NUMBER',
-value: function(){
-return '0800-005-320';
-}
-};
-DataProvider.instance.register( providerMarketPhone );
-var provider = {
-id: 'css selector',
-type: 'printer',
-actions: {
-'print': function (selector) {
-var tmpClass = '-print-visible';
-var $el = $(selector);
-$el.addClass(tmpClass);
-var $parents = $el.parents('');
-$parents.addClass(tmpClass);
-var css = '@media print ' + 
-'{' +
-'body *:not(.-print-visible) { display:none!important;}' +  
-'*.-print-visible { display: block!important; margin:0;padding:0 }' +
-selector + ',' +
-selector + ' *:not(script):not(style)' +
-'{' +
-'visibility:visible!important; display: block!important;' +
-'}' +
-'}';
-var style = document.createElement('style');
-var head = document.head || document.getElementsByTagName('head')[0];
-if (style.styleSheet) {
-style.styleSheet.cssText = css;
-}
-else {
-style.appendChild(document.createTextNode(css));
-}
-head.appendChild(style);
-setTimeout(function(){
-window.print();
-head.removeChild(style);
-$parents.removeClass(tmpClass);
-$el.removeClass(tmpClass);
-}, 200);
-}
-}
-};
-ActionProvider.instance.register( provider );
-hub.set( 
-PATH_HUB, {
-promise: RSVP.all([
-stateDataProvider.provide(),
-offerDateProvider.provide(),
-orderDateProvider.provide(),
-dateProvider.provide(),
-directDebitProvider.provide()
-])
-}
-);
-});
-</script>
-</div>
-<script type="text/javascript">
-( window.require || ( window.amdShim && window.amdShim.require ) || function(){} )
-(['$','shared/initializer/die'], function($, die){
-var $el = $('#nav-parsys_customnavigation-9c6_cta-nav-button');
-die.init($el);
-});
-</script></div>
-</li>
-</ul> -->
-
 
 </div>
 </div>
@@ -1020,7 +768,7 @@ die.init($el);
 		</ul>
 		<ul>
 		<li style="font-size:small;list-style:none;color:#003F5D;">
-		<a href="#">價格：NT$39,500 / 年 / 人</a>
+		<a href="../buy/default/member/index1.html">價格：NT$39,500 / 年 / 人</a>
 		</li>
 		</ul>
 	</div>
@@ -1149,7 +897,7 @@ die.init($el);
 		</ul>
 		<ul>
 		<li style="font-size:small;list-style:none;color:#003F5D;">
-			<a href="#">價格：NT$20,500 / 年 / 人</a>
+			<a href="../buy/default/member/index2.html">價格：NT$20,500 / 年 / 人</a>
 		</li>
 		</ul>
 
@@ -1247,7 +995,7 @@ die.init($el);
 	</ul>
 	<ul>
 		<li style="font-size:small;list-style:none;color:#003F5D;">
-		<a href="#">價格：NT$16,600 / 年 / 人</a>
+		<a href="../buy/default/member/index3.html">價格：NT$16,600 / 年 / 人</a>
 		</li>
 	</ul>
 	</div>
