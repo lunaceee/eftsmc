@@ -1,0 +1,6 @@
+.youtube-video-component .youtubevideo-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}
+.youtube-video-component .youtubevideo-container iframe,.youtube-video-component .youtubevideo-container object,.youtube-video-component .youtubevideo-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
+.youtube-video-component .youtubevideo-container iframe{*min-height:450px}
+.youtube-video-component{position:relative}
+.youtube-video-component .video-player-mask{position:absolute;top:0;left:0;height:100%;width:100%;cursor:pointer}
+.youtube-video-component .video-player-mask .video-player-mask-img,.youtube-video-component .video-player-mask .video-player-mask-img img{height:100%;width:100%}
