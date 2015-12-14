@@ -653,102 +653,51 @@ die.init($el);
 </div>
 </div>
 </div>
+
 <div class="span7">
-<div class="parsys stageheroRight"><div class="video-component section">
-<style type="text/css">
-.video-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px;
-height: 0;
-overflow: hidden;
-}
-.video-container iframe, .video-container object, .video-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-.video-container iframe {
-*min-height: 450px;
-}
-</style>
+		<div class="parsys stageheroRight">
+			<div class="video-component section">
+				<div class="parsys stageheroRight">
+					<div class="video-component section">
+						<style type="text/css">
+						.video-container {
+						position: relative;
+						padding-bottom: 56.25%;	
+						padding-top: 30px;
+						height: 0;
+						overflow: hidden;
+						}
+						.video-container iframe, .video-container object, .video-container embed {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						}
+						.video-container iframe {
+						*min-height: 450px;
+						}
+						</style>
+
+				<div class="video-container">
+				<span id="video-hero_stageheroRight_video-1e95-msm-moved" data-url="http://www.youtube.com/watch?v=i15CmoyLoZA&amp;list=PLRjM411hfe3322Wn8yn3IXvUF74lbuxR0&amp;index=1"></span>
+
+				<iframe id="widget2" src="http://www.youtube.com/embed/i15CmoyLoZA?feature=oembed&amp;wmode=opaque&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1" data-src="http://www.youtube.com/embed/i15CmoyLoZA?feature=oembed&amp;wmode=opaque" allowfullscreen="" frameborder="0" height="270" width="480"></iframe></div>
 
 
 
-<div class="parsys stageheroRight"><div class="video-component section">
-<style type="text/css">
-.video-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px;
-height: 0;
-overflow: hidden;
-}
-.video-container iframe, .video-container object, .video-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-.video-container iframe {
-*min-height: 450px;
-}
-</style>
-<div class="video-container"><span id="video-hero_stageheroRight_video-1e95-msm-moved" data-url="http://www.youtube.com/watch?v=i15CmoyLoZA&amp;list=PLRjM411hfe3322Wn8yn3IXvUF74lbuxR0&amp;index=1"></span><iframe id="widget2" src="http://www.youtube.com/embed/i15CmoyLoZA?feature=oembed&amp;wmode=opaque&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1" data-src="http://www.youtube.com/embed/i15CmoyLoZA?feature=oembed&amp;wmode=opaque" allowfullscreen="" frameborder="0" height="270" width="480"></iframe></div>
-<script type="text/javascript" src="http://et1.ef-cdn.com/etc/designs/b2c/2013/clientlibs-component/video.min.js?v=AVGHjQX0"></script>
-<script type="text/javascript">
-require(['$', '2013/components/video/oEmbed', 'shared/lib/URI'], function( $, OEmbed, URI ){
-$(function() {
-$("#video-hero_stageheroRight_video-1e95-msm-moved").oEmbed(null,
-{
-afterEmbed:function() {
-$("#video-hero_stageheroRight_video-1e95-msm-moved").next("iframe").attr('src', function() {
-var strUrl = $(this).attr('data-src');
-var uri = new URI(strUrl);
-var query = uri.query( true );
-query.modestbranding = 1;
-query.rel = 0;
-uri.query( query );
-return uri.toString();
-});
-}
-}
-);
-});
-})
-</script></div>
-</div>
+			<span id="video-hero_stageheroRight_video-1e95-msm-moved" data-url="http://www.youtube.com/watch?v=i15CmoyLoZA&list=PLRjM411hfe3322Wn8yn3IXvUF74lbuxR0&index=1"></span>
+
+			<script type="text/javascript" src="http://et1.ef-cdn.com/etc/designs/b2c/2013/clientlibs-component/video.min.js?v=AVCvJhkm"></script>
 
 
-<span id="video-hero_stageheroRight_video-1e95-msm-moved" data-url="http://www.youtube.com/watch?v=i15CmoyLoZA&list=PLRjM411hfe3322Wn8yn3IXvUF74lbuxR0&index=1"></span>
-<script type="text/javascript" src="http://et1.ef-cdn.com/etc/designs/b2c/2013/clientlibs-component/video.min.js?v=AVCvJhkm"></script>
-<script type="text/javascript">
-require(['$', '2013/components/video/oEmbed', 'shared/lib/URI'], function( $, OEmbed, URI ){
-$(function() {
-$("#video-hero_stageheroRight_video-1e95-msm-moved").oEmbed(null,
-{
-afterEmbed:function() {
-$("#video-hero_stageheroRight_video-1e95-msm-moved").next("iframe").attr('src', function() {
-var strUrl = $(this).attr('data-src');
-var uri = new URI(strUrl);
-var query = uri.query( true );
-query.modestbranding = 1;
-query.rel = 0;
-uri.query( query );
-return uri.toString();
-});
-}
-}
-);
-});
-})
-</script></div>
-</div>
-</div>
-</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 </div>
 </div>
 </section>
