@@ -674,6 +674,55 @@ height: 100%;
 *min-height: 450px;
 }
 </style>
+
+
+
+<div class="parsys stageheroRight"><div class="video-component section">
+<style type="text/css">
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.video-container iframe {
+*min-height: 450px;
+}
+</style>
+<div class="video-container"><span id="video-hero_stageheroRight_video-1e95-msm-moved" data-url="http://www.youtube.com/watch?v=i15CmoyLoZA&amp;list=PLRjM411hfe3322Wn8yn3IXvUF74lbuxR0&amp;index=1"></span><iframe id="widget2" src="http://www.youtube.com/embed/i15CmoyLoZA?feature=oembed&amp;wmode=opaque&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1" data-src="http://www.youtube.com/embed/i15CmoyLoZA?feature=oembed&amp;wmode=opaque" allowfullscreen="" frameborder="0" height="270" width="480"></iframe></div>
+<script type="text/javascript" src="http://et1.ef-cdn.com/etc/designs/b2c/2013/clientlibs-component/video.min.js?v=AVGHjQX0"></script>
+<script type="text/javascript">
+require(['$', '2013/components/video/oEmbed', 'shared/lib/URI'], function( $, OEmbed, URI ){
+$(function() {
+$("#video-hero_stageheroRight_video-1e95-msm-moved").oEmbed(null,
+{
+afterEmbed:function() {
+$("#video-hero_stageheroRight_video-1e95-msm-moved").next("iframe").attr('src', function() {
+var strUrl = $(this).attr('data-src');
+var uri = new URI(strUrl);
+var query = uri.query( true );
+query.modestbranding = 1;
+query.rel = 0;
+uri.query( query );
+return uri.toString();
+});
+}
+}
+);
+});
+})
+</script></div>
+</div>
+
+
 <span id="video-hero_stageheroRight_video-1e95-msm-moved" data-url="http://www.youtube.com/watch?v=i15CmoyLoZA&list=PLRjM411hfe3322Wn8yn3IXvUF74lbuxR0&index=1"></span>
 <script type="text/javascript" src="http://et1.ef-cdn.com/etc/designs/b2c/2013/clientlibs-component/video.min.js?v=AVCvJhkm"></script>
 <script type="text/javascript">
@@ -731,7 +780,7 @@ die.init($el);
 <div class="pull-left media-object"><div class="adaptiveimage classicImg parbase image">
 <script type="text/javascript" src="http://et.ef-cdn.com/etc/designs/b2c/clientlibs-generic/picturefill.min.js?v=AVB/aJ2Q"></script>
 <div class="">
-<span data-picture data-title="Mariko,&#x20;EF&#x20;Englishtown&#x20;student" data-class="img-responsive" data-alt="Mariko,&#x20;EF&#x20;Englishtown&#x20;student" >
+<!-- <span data-picture data-title="Mariko,&#x20;EF&#x20;Englishtown&#x20;student" data-class="img-responsive" data-alt="Mariko,&#x20;EF&#x20;Englishtown&#x20;student" >
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_747e/classicImg.img.full.low.jpg/1395676869710.jpg" data-media="(min-width : 1px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_747e/classicImg.img.full.medium.jpg/1395676869710.jpg" data-media="(min-width : 320px)"></span>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_747e/classicImg.img.full.high.jpg/1395676869710.jpg" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -742,7 +791,10 @@ die.init($el);
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_747e/classicImg.img.full.low.jpg/1395676869710.jpg" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_747e/classicImg.img.full.medium.jpg/1395676869710.jpg" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_747e/classicImg.img.full.medium.jpg/1395676869710.jpg" data-media="(min-width : 1200px)"></span>
-<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_747e/classicImg.img.full.high.jpg/1395676869710.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_747e/classicImg.img.full.high.jpg/1395676869710.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+<img src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_747e/classicImg.img.full.medium.jpg/1395676869710.jpg" class="img-responsive" alt="Mariko, EF Englishtown student">
+
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_747e/classicImg.img.full.medium.jpg/1395676869710.jpg"></span>
@@ -774,7 +826,7 @@ id="L2NvbnRlbnQvZW5nbGlzaHRvd24vdHcvemgvdGVhY2hlcnMtYW5kLXN0dWRlbnRzL3N0dWRlbnRz
 <div class="media section">
 <div class="pull-left media-object"><div class="adaptiveimage classicImg parbase image">
 <div class="">
-<span data-picture data-title="Diego,&#x20;EF&#x20;Englishtown&#x20;student" data-class="img-responsive" data-alt="Diego,&#x20;EF&#x20;Englishtown&#x20;student" >
+<!-- <span data-picture data-title="Diego,&#x20;EF&#x20;Englishtown&#x20;student" data-class="img-responsive" data-alt="Diego,&#x20;EF&#x20;Englishtown&#x20;student" >
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_f38/classicImg.img.full.low.jpg/1395676887329.jpg" data-media="(min-width : 1px)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_f38/classicImg.img.full.medium.jpg/1395676887329.jpg" data-media="(min-width : 320px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_f38/classicImg.img.full.high.jpg/1395676887329.jpg" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -785,7 +837,11 @@ id="L2NvbnRlbnQvZW5nbGlzaHRvd24vdHcvemgvdGVhY2hlcnMtYW5kLXN0dWRlbnRzL3N0dWRlbnRz
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_f38/classicImg.img.full.low.jpg/1395676887329.jpg" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_f38/classicImg.img.full.medium.jpg/1395676887329.jpg" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_f38/classicImg.img.full.medium.jpg/1395676887329.jpg" data-media="(min-width : 1200px)"></span>
-   <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_f38/classicImg.img.full.high.jpg/1395676887329.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+   <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_f38/classicImg.img.full.high.jpg/1395676887329.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+<img src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_f38/classicImg.img.full.medium.jpg/1395676887329.jpg" class="img-responsive" alt="Diego, EF Englishtown student">
+
+
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_f38/classicImg.img.full.medium.jpg/1395676887329.jpg"></span>
@@ -817,7 +873,7 @@ id="L2NvbnRlbnQvZW5nbGlzaHRvd24vdHcvemgvdGVhY2hlcnMtYW5kLXN0dWRlbnRzL3N0dWRlbnRz
 <div class="media section">
 <div class="pull-left media-object"><div class="adaptiveimage classicImg parbase image">
 <div class="">
-<span data-picture data-title="Mariko,&#x20;EF&#x20;Englishtown&#x20;student" data-class="img-responsive" data-alt="Mariko,&#x20;EF&#x20;Englishtown&#x20;student" >
+<!-- <span data-picture data-title="Mariko,&#x20;EF&#x20;Englishtown&#x20;student" data-class="img-responsive" data-alt="Mariko,&#x20;EF&#x20;Englishtown&#x20;student" >
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ce2e/classicImg.img.full.low.png/1393849637292.png" data-media="(min-width : 1px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ce2e/classicImg.img.full.medium.png/1393849637292.png" data-media="(min-width : 320px)"></span>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ce2e/classicImg.img.full.high.png/1393849637292.png" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -828,7 +884,10 @@ id="L2NvbnRlbnQvZW5nbGlzaHRvd24vdHcvemgvdGVhY2hlcnMtYW5kLXN0dWRlbnRzL3N0dWRlbnRz
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ce2e/classicImg.img.full.low.png/1393849637292.png" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ce2e/classicImg.img.full.medium.png/1393849637292.png" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ce2e/classicImg.img.full.medium.png/1393849637292.png" data-media="(min-width : 1200px)"></span>
-<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ce2e/classicImg.img.full.high.png/1393849637292.png" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ce2e/classicImg.img.full.high.png/1393849637292.png" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+<img src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ce2e/classicImg.img.full.medium.png/1393849637292.png" class="img-responsive" alt="Mariko, EF Englishtown student">
+
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ce2e/classicImg.img.full.medium.png/1393849637292.png"></span>
@@ -856,7 +915,7 @@ id="L2NvbnRlbnQvZW5nbGlzaHRvd24vdHcvemgvdGVhY2hlcnMtYW5kLXN0dWRlbnRzL3N0dWRlbnRz
 <div class="media section">
 <div class="pull-left media-object"><div class="adaptiveimage classicImg parbase image">
 <div class="">
-<span data-picture data-title="Diego,&#x20;EF&#x20;Englishtown&#x20;student" data-class="img-responsive" data-alt="Diego,&#x20;EF&#x20;Englishtown&#x20;student" >
+<!-- <span data-picture data-title="Diego,&#x20;EF&#x20;Englishtown&#x20;student" data-class="img-responsive" data-alt="Diego,&#x20;EF&#x20;Englishtown&#x20;student" >
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ad74/classicImg.img.full.low.png/1393849637295.png" data-media="(min-width : 1px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ad74/classicImg.img.full.medium.png/1393849637295.png" data-media="(min-width : 320px)"></span>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ad74/classicImg.img.full.high.png/1393849637295.png" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -867,7 +926,9 @@ id="L2NvbnRlbnQvZW5nbGlzaHRvd24vdHcvemgvdGVhY2hlcnMtYW5kLXN0dWRlbnRzL3N0dWRlbnRz
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ad74/classicImg.img.full.low.png/1393849637295.png" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ad74/classicImg.img.full.medium.png/1393849637295.png" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ad74/classicImg.img.full.medium.png/1393849637295.png" data-media="(min-width : 1200px)"></span>
-<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ad74/classicImg.img.full.high.png/1393849637295.png" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ad74/classicImg.img.full.high.png/1393849637295.png" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+<img src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ad74/classicImg.img.full.medium.png/1393849637295.png" class="img-responsive" alt="Diego, EF Englishtown student">
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_ad74/classicImg.img.full.medium.png/1393849637295.png"></span>
@@ -904,7 +965,7 @@ id="L2NvbnRlbnQvZW5nbGlzaHRvd24vdHcvemgvdGVhY2hlcnMtYW5kLXN0dWRlbnRzL3N0dWRlbnRz
 <div class="media section">
 <div class="pull-left media-object"><div class="adaptiveimage classicImg parbase image">
 <div class="">
-<span data-picture data-title="Elmo,&#x20;EF&#x20;Englishtown&#x20;student" data-class="img-responsive" data-alt="Elmo,&#x20;EF&#x20;Englishtown&#x20;student" >
+<!-- <span data-picture data-title="Elmo,&#x20;EF&#x20;Englishtown&#x20;student" data-class="img-responsive" data-alt="Elmo,&#x20;EF&#x20;Englishtown&#x20;student" >
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_d757/classicImg.img.full.low.png/1393849637299.png" data-media="(min-width : 1px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_d757/classicImg.img.full.medium.png/1393849637299.png" data-media="(min-width : 320px)"></span>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_d757/classicImg.img.full.high.png/1393849637299.png" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -915,7 +976,10 @@ id="L2NvbnRlbnQvZW5nbGlzaHRvd24vdHcvemgvdGVhY2hlcnMtYW5kLXN0dWRlbnRzL3N0dWRlbnRz
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_d757/classicImg.img.full.low.png/1393849637299.png" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_d757/classicImg.img.full.medium.png/1393849637299.png" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_d757/classicImg.img.full.medium.png/1393849637299.png" data-media="(min-width : 1200px)"></span>
-<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_d757/classicImg.img.full.high.png/1393849637299.png" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_d757/classicImg.img.full.high.png/1393849637299.png" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+
+<img src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_d757/classicImg.img.full.medium.png/1393849637299.png" class="img-responsive" alt="Elmo, EF Englishtown student">
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_d757/classicImg.img.full.medium.png/1393849637299.png"></span>
@@ -952,7 +1016,7 @@ id="L2NvbnRlbnQvZW5nbGlzaHRvd24vdHcvemgvdGVhY2hlcnMtYW5kLXN0dWRlbnRzL3N0dWRlbnRz
 <div class="media section">
 <div class="pull-left media-object"><div class="adaptiveimage classicImg parbase image">
 <div class="">
-<span data-picture data-title="Sindy,&#x20;EF&#x20;Englishtown&#x20;Student" data-class="img-responsive" data-alt="Sindy,&#x20;EF&#x20;Englishtown&#x20;Student" >
+<!-- <span data-picture data-title="Sindy,&#x20;EF&#x20;Englishtown&#x20;Student" data-class="img-responsive" data-alt="Sindy,&#x20;EF&#x20;Englishtown&#x20;Student" >
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_98e8/classicImg.img.full.low.png/1393849637302.png" data-media="(min-width : 1px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_98e8/classicImg.img.full.medium.png/1393849637302.png" data-media="(min-width : 320px)"></span>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_98e8/classicImg.img.full.high.png/1393849637302.png" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -963,7 +1027,9 @@ id="L2NvbnRlbnQvZW5nbGlzaHRvd24vdHcvemgvdGVhY2hlcnMtYW5kLXN0dWRlbnRzL3N0dWRlbnRz
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_98e8/classicImg.img.full.low.png/1393849637302.png" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_98e8/classicImg.img.full.medium.png/1393849637302.png" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_98e8/classicImg.img.full.medium.png/1393849637302.png" data-media="(min-width : 1200px)"></span>
-<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_98e8/classicImg.img.full.high.png/1393849637302.png" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_98e8/classicImg.img.full.high.png/1393849637302.png" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+<img src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_98e8/classicImg.img.full.medium.png/1393849637302.png" class="img-responsive" alt="Sindy, EF Englishtown Student">
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/students/_jcr_content/mainLeft/accordion_98e8/classicImg.img.full.medium.png/1393849637302.png"></span>

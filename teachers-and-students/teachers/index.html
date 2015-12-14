@@ -595,11 +595,57 @@ border-bottom: 1px dotted #cccccc;
 <div class="container blaze-container" >
 <div class="row-fluid  no-gutter" style="background-color:#fff;">
 <div class=" span6 push-span6 order-1 priority-0 " >
-<div class="parsys column1"><div class="section youtube-video-component">
-<link rel="stylesheet" href="http://et.ef-cdn.com/etc/designs/b2c/2014/clientlibs-component/youtubevideo.min.css?v=AUfO3FDz" type="text/css">
-<div class="youtubevideo-container">
-<div id="container-blankSection_columnscontrol-b08e_column0_columnscontrol-9c3_column1_youtubevideo-84ae"></div>
+<div class="parsys column1">
+<div class="section youtube-video-component">
+<!-- <link rel="stylesheet" href="http://et.ef-cdn.com/etc/designs/b2c/2014/clientlibs-component/youtubevideo.min.css?v=AUfO3FDz" type="text/css"> -->
+
+<div class="youtube-video-component youtubevideo-container">
+<div id="container-blankSection_columnscontrol-b08e_column0_columnscontrol-9c3_column1_youtubevideo-84ae">
+
+<style>
+	.youtube-video-component .youtubevideo-container
+		{position:relative;
+		padding-bottom:56.25%;
+		padding-top:30px;height:0;
+		overflow:hidden}
+
+	.youtube-video-component .youtubevideo-container iframe,.youtube-video-component .youtubevideo-container object,.youtube-video-component .youtubevideo-container embed
+		{position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%}
+
+	.youtube-video-component .youtubevideo-container iframe
+	{*min-height:450px}
+	.youtube-video-component
+	{position:relative}
+	.youtube-video-component .video-player-mask
+	{
+		position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	cursor:pointer;
+	}
+
+	.youtube-video-component .video-player-mask .video-player-mask-img,.youtube-video-component .video-player-mask .video-player-mask-img img
+	{height:100%;
+	width:100%;
+	}
+
+
+</style>
+
+<iframe id="widget2" src="https://www.youtube.com/embed/AlstwRzsbgM?modestbranding=1&amp;rel=0&amp;autoplay=0&amp;origin=http%3A%2F%2Fwww.englishtown.com&amp;showinfo=1&amp;theme=light&amp;enablejsapi=1" title="YouTube video player" allowfullscreen="1" class="placeholder" frameborder="0" height="360" width="640"></iframe>
+
+
 </div>
+</div>
+
+
+
 <script>
 require(['$'], function( $ ){
 function onPlayerReady(event) {
@@ -657,10 +703,17 @@ onYouTubeAPIReady.apply(this, arguments);
 }
 });
 </script>
+
+
+
 <div class="video-player-mask" id="video-mask-blankSection_columnscontrol-b08e_column0_columnscontrol-9c3_column1_youtubevideo-84ae">
+
+
 <script type="text/javascript" src="http://et.ef-cdn.com/etc/designs/b2c/clientlibs-generic/picturefill.min.js?v=AVB/aJ2Q"></script>
 <div class="video-player-mask-img">
-<span data-picture data-title="Teachers-Video-Holding" data-class="img-responsive" data-alt="Teachers-Video-Holding" >
+
+
+<!-- <span data-picture data-title="Teachers-Video-Holding" data-class="img-responsive" data-alt="Teachers-Video-Holding" >
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_9c3/column1/youtubevideo_84ae/image.img.320.low.jpg/1440556896146.jpg" data-media="(min-width : 1px)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_9c3/column1/youtubevideo_84ae/image.img.320.medium.jpg/1440556896146.jpg" data-media="(min-width : 320px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_9c3/column1/youtubevideo_84ae/image.img.480.high.jpg/1440556896146.jpg" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -671,7 +724,10 @@ onYouTubeAPIReady.apply(this, arguments);
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_9c3/column1/youtubevideo_84ae/image.img.full.low.jpg/1440556896146.jpg" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_9c3/column1/youtubevideo_84ae/image.img.full.medium.jpg/1440556896146.jpg" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_9c3/column1/youtubevideo_84ae/image.img.full.medium.jpg/1440556896146.jpg" data-media="(min-width : 1200px)"></span>
-<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_9c3/column1/youtubevideo_84ae/image.img.full.high.jpg/1440556896146.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_9c3/column1/youtubevideo_84ae/image.img.full.high.jpg/1440556896146.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+<img src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_9c3/column1/youtubevideo_84ae/image.img.full.medium.jpg/1440556896146.jpg" class="img-responsive" alt="Teachers-Video-Holding">
+
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_9c3/column1/youtubevideo_84ae/image.img.full.medium.jpg/1440556896146.jpg"></span>
@@ -808,7 +864,7 @@ die.init($el);
 <div class=" span6  order-0 priority-0 " >
 <div class="parsys column0"><div class="adaptiveimage parbase image section">
 <div class="">
-<span data-picture data-title="Our&#x20;teachers&#x20;Carmen" data-class="img-responsive" data-alt="Our&#x20;teachers&#x20;Carmen" >
+<!-- <span data-picture data-title="Our&#x20;teachers&#x20;Carmen" data-class="img-responsive" data-alt="Our&#x20;teachers&#x20;Carmen" >
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef6/column0/adaptiveimage_953.img.320.low.jpg/1424359468864.jpg" data-media="(min-width : 1px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef6/column0/adaptiveimage_953.img.320.medium.jpg/1424359468864.jpg" data-media="(min-width : 320px)"></span>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef6/column0/adaptiveimage_953.img.480.high.jpg/1424359468864.jpg" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -819,7 +875,10 @@ die.init($el);
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef6/column0/adaptiveimage_953.img.full.low.jpg/1424359468864.jpg" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef6/column0/adaptiveimage_953.img.full.medium.jpg/1424359468864.jpg" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef6/column0/adaptiveimage_953.img.full.medium.jpg/1424359468864.jpg" data-media="(min-width : 1200px)"></span>
-<span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef6/column0/adaptiveimage_953.img.full.high.jpg/1424359468864.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+<span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef6/column0/adaptiveimage_953.img.full.high.jpg/1424359468864.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+<img src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef6/column0/adaptiveimage_953.img.full.medium.jpg/1424359468864.jpg" class="img-responsive" alt="Our teachers Carmen">
+
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef6/column0/adaptiveimage_953.img.full.medium.jpg/1424359468864.jpg"></span>
@@ -1014,7 +1073,7 @@ $spacer.css('height', String(heightAccordingToPercentage) + 'px');
 <div class=" span6  order-1 priority-1 " >
 <div class="parsys column1"><div class="adaptiveimage parbase image section">
 <div class="">
-<span data-picture data-title="Our&#x20;teachers&#x20;Matthew" data-class="img-responsive" data-alt="Our&#x20;teachers&#x20;Matthew" >
+<!-- <span data-picture data-title="Our&#x20;teachers&#x20;Matthew" data-class="img-responsive" data-alt="Our&#x20;teachers&#x20;Matthew" >
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef8/column1/adaptiveimage_4c90.img.320.low.jpg/1424359469750.jpg" data-media="(min-width : 1px)"></span>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef8/column1/adaptiveimage_4c90.img.320.medium.jpg/1424359469750.jpg" data-media="(min-width : 320px)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef8/column1/adaptiveimage_4c90.img.480.high.jpg/1424359469750.jpg" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -1025,7 +1084,10 @@ $spacer.css('height', String(heightAccordingToPercentage) + 'px');
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef8/column1/adaptiveimage_4c90.img.full.low.jpg/1424359469750.jpg" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef8/column1/adaptiveimage_4c90.img.full.medium.jpg/1424359469750.jpg" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef8/column1/adaptiveimage_4c90.img.full.medium.jpg/1424359469750.jpg" data-media="(min-width : 1200px)"></span>
-<span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef8/column1/adaptiveimage_4c90.img.full.high.jpg/1424359469750.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+<span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef8/column1/adaptiveimage_4c90.img.full.high.jpg/1424359469750.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+<img src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef8/column1/adaptiveimage_4c90.img.full.medium.jpg/1424359469750.jpg" class="img-responsive" alt="Our teachers Matthew">
+
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef8/column1/adaptiveimage_4c90.img.full.medium.jpg/1424359469750.jpg"></span>
@@ -1043,7 +1105,7 @@ $spacer.css('height', String(heightAccordingToPercentage) + 'px');
 <div class=" span6  order-0 priority-0 " >
 <div class="parsys column0"><div class="adaptiveimage parbase image section">
 <div class="">
-<span data-picture data-title="Our&#x20;teachers&#x20;Joanna" data-class="img-responsive" data-alt="Our&#x20;teachers&#x20;Joanna" >
+<!-- <span data-picture data-title="Our&#x20;teachers&#x20;Joanna" data-class="img-responsive" data-alt="Our&#x20;teachers&#x20;Joanna" >
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef4/column0/adaptiveimage_cde5.img.320.low.jpg/1424359469899.jpg" data-media="(min-width : 1px)"></span>
 <span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef4/column0/adaptiveimage_cde5.img.320.medium.jpg/1424359469899.jpg" data-media="(min-width : 320px)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef4/column0/adaptiveimage_cde5.img.480.high.jpg/1424359469899.jpg" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -1054,7 +1116,10 @@ $spacer.css('height', String(heightAccordingToPercentage) + 'px');
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef4/column0/adaptiveimage_cde5.img.full.low.jpg/1424359469899.jpg" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef4/column0/adaptiveimage_cde5.img.full.medium.jpg/1424359469899.jpg" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef4/column0/adaptiveimage_cde5.img.full.medium.jpg/1424359469899.jpg" data-media="(min-width : 1200px)"></span>
-<span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef4/column0/adaptiveimage_cde5.img.full.high.jpg/1424359469899.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+<span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef4/column0/adaptiveimage_cde5.img.full.high.jpg/1424359469899.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+<img src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef4/column0/adaptiveimage_cde5.img.full.medium.jpg/1424359469899.jpg" class="img-responsive" alt="Our teachers Joanna">
+
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef4/column0/adaptiveimage_cde5.img.full.medium.jpg/1424359469899.jpg"></span>
@@ -1248,7 +1313,7 @@ $spacer.css('height', String(heightAccordingToPercentage) + 'px');
 <div class=" span6  order-1 priority-1 " >
 <div class="parsys column1"><div class="adaptiveimage parbase image section">
 <div class="">
-<span data-picture data-title="Our&#x20;teachers" data-class="img-responsive" data-alt="Our&#x20;teachers" >
+<!-- <span data-picture data-title="Our&#x20;teachers" data-class="img-responsive" data-alt="Our&#x20;teachers" >
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef2/column1/adaptiveimage_eb.img.320.low.jpg/1424359470559.jpg" data-media="(min-width : 1px)"></span>
 <span data-src="http://et2.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef2/column1/adaptiveimage_eb.img.320.medium.jpg/1424359470559.jpg" data-media="(min-width : 320px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef2/column1/adaptiveimage_eb.img.480.high.jpg/1424359470559.jpg" data-media="(min-width : 320px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
@@ -1259,7 +1324,10 @@ $spacer.css('height', String(heightAccordingToPercentage) + 'px');
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef2/column1/adaptiveimage_eb.img.full.low.jpg/1424359470559.jpg" data-media="(min-width : 1024px)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef2/column1/adaptiveimage_eb.img.full.medium.jpg/1424359470559.jpg" data-media="(min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef2/column1/adaptiveimage_eb.img.full.medium.jpg/1424359470559.jpg" data-media="(min-width : 1200px)"></span>
-<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef2/column1/adaptiveimage_eb.img.full.high.jpg/1424359470559.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+<span data-src="http://et1.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef2/column1/adaptiveimage_eb.img.full.high.jpg/1424359470559.jpg" data-media="(min-width : 1200px) and (-webkit-min-device-pixel-ratio: 2.0)"></span> -->
+
+<img src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef2/column1/adaptiveimage_eb.img.full.medium.jpg/1424359470559.jpg" class="img-responsive" alt="Our teachers">
+
 <!-- Fallback content for IE -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <span data-src="http://et.ef-cdn.com/zh-tw/teachers-and-students/teachers/_jcr_content/blankSection/columnscontrol_b08e/column0/columnscontrol_3ef2/column1/adaptiveimage_eb.img.full.medium.jpg/1424359470559.jpg"></span>
