@@ -100,7 +100,7 @@ your browser</a> to improve your experience.</p>
 <div>
 <div class="row">
 <span>
-	<h2>您选择的是EF PREMIUM课程</h2>
+	<h1>您选择的是EF PREMIUM课程</h1>
 </span>
 <div class="col-md-6 col-sm-6 col-xs-6 current step component">
 <div class="plate">
@@ -290,7 +290,10 @@ border-bottom: 1px dotted #cccccc;
 <h1 class="   ">填寫個人信息</h1></div>
 
 
-<div class="form holder">
+<div class="form holder form-component section">
+
+<!-- <link rel="stylesheet" href="http://et.ef-cdn.com/etc/designs/b2c/2013/clientlibs-component/lpform.min.css?v=AVB/aJbw" type="text/css">
+ -->
 	<div class="inner">
 	<div class="parsys form">
 	<div class="form component section">
@@ -303,12 +306,19 @@ border-bottom: 1px dotted #cccccc;
 		<div class="row">
 		</div>
 
-		<div class="row">
-		<div class="col-md-9 ">
+
+		<div class="col-md-10">
 		<div class="form-group form-group-firstname has-feedback">
-		<div class=" input-group floating-label clearfix">
+		<div class="input-group floating-label clearfix">
 		<label for="firstname" class="floating-label label-placeholder">名字</label>
-		<input class="form-control tooltip-on-right floating-label" type="text" name="firstname" id="firstname" required="required" data-validation-pattern="" placeholder="名字"/>
+		<input class="form-control tooltip-on-right floating-label" 
+		type="text" 
+		name="firstname" 
+		id="firstname" 
+		required="required" 
+		data-validation-pattern="" 
+		placeholder="名字（請使用英文字母）"/>
+
 		<span class="glyphicon glyphicon-ok form-control-feedback show-when-success"></span>
 		<span class="glyphicon glyphicon-remove form-control-feedback show-when-error"></span>
 		<span class="invalid error message">
@@ -317,14 +327,14 @@ border-bottom: 1px dotted #cccccc;
 		</div>
 		</div>
 		</div>
-		</div>
 
-		<div class="row">
-		<div class="col-md-9 ">
+
+
+		<div class="col-md-10">
 		<div class="form-group form-group-lastname has-feedback">
 		<div class=" input-group floating-label clearfix">
 		<label for="lastname" class="floating-label label-placeholder">姓氏</label>
-		<input class="form-control tooltip-on-right floating-label" type="text" name="lastname" id="lastname" required="required" data-validation-pattern=""placeholder="姓氏"/>
+		<input class="form-control tooltip-on-right floating-label" type="text" name="lastname" id="lastname" required="required" data-validation-pattern="" placeholder="姓氏（請使用英文字母）"/>
 		<span class="glyphicon glyphicon-ok form-control-feedback show-when-success"></span>
 		<span class="glyphicon glyphicon-remove form-control-feedback show-when-error"></span>
 		<span class="invalid error message">
@@ -333,10 +343,9 @@ border-bottom: 1px dotted #cccccc;
 		</div>
 		</div>
 		</div>
-		</div>
 
-		<div class="row">
-		<div class="col-md-9 ">
+
+		<div class="col-md-10">
 		<div class="form-group form-group-email has-feedback">
 		<div class=" input-group floating-label clearfix">
 		<label for="email" class="floating-label label-placeholder">電子郵件</label>
@@ -347,10 +356,22 @@ border-bottom: 1px dotted #cccccc;
 		</div>
 		</div>
 		</div>
-		</div>
 
-		<div class="row">
-		<div class="col-md-9 ">
+		<div class="col-md-10">
+		<div class="form-group form-group-email has-feedback">
+		<div class=" input-group floating-label clearfix">
+		<label for="email" class="floating-label label-placeholder">工號</label>
+		<input class="form-control tooltip-on-right floating-label" type="number" name="number" required="required" placeholder="您的工號" data-original-title title/>
+		<span class="glyphicon glyphicon-ok form-control-feedback show-when-success"></span>
+		<span class="glyphicon glyphicon-remove form-control-feedback show-when-error"></span>
+		<span class="invalid error message">請輸入工號</span>
+		</div>
+		</div>
+		</div>
+	
+
+
+		<div class="col-md-10">
 		<div class="form-group form-group-telephone has-feedback">
 		<div class=" input-group floating-label clearfix">
 		<label for="telephone" class="floating-label label-placeholder">手機號碼</label>
@@ -365,7 +386,6 @@ border-bottom: 1px dotted #cccccc;
 		</div>
 		</div>
 		</div>
-		</div>
 
 		<script type="text/javascript" src="https://et1.ef-cdn.com/etc/designs/b2c/2013/clientlibs-component/lpform/plugins.min.js?v=AU/5GXG0">
 		</script>
@@ -373,8 +393,8 @@ border-bottom: 1px dotted #cccccc;
 		
 	</div>
 
-	<div class="row">
-	<div class="col-md-12 ">
+
+	<div class="col-md-10">
 	<div class="form-group">
 	<div class="">
 	<label class=" tooltip-on-right" for="SubscribeToEmailEnglish">
@@ -383,21 +403,22 @@ border-bottom: 1px dotted #cccccc;
 
 		<div class="uk-modal-dialog">
     	<div class="uk-overflow-container">
-    	我同意並接受英孚教育的<a href="../../../terms-and-conditions/tsmc.html" ><b>條款與政策</b>。</a>
+    	我同意並接受英孚教育的<a href="../../../terms-and-conditions/tsmc.html" target="_blank"><b>條款與政策</b>。</a>
     	</div>
 		</div>
 	</label>
 	</div>
 	</div>
 	</div>
-	</div>
 
 	<!-- Enter Payment Gateway -->
+	<div class="col-md-10" style="margin-bottom:20px;">
 	<div class="bs3 clearfix button-component section">
 	<div id="form_button">
 	<button type="submit"  class="btn btn-primary" target="_self">
 	下一步
 	</button>
+	</div>
 	</div>
 	</div>
 	<!-- Enter Payment Gateway End -->
@@ -409,7 +430,7 @@ border-bottom: 1px dotted #cccccc;
 </div>
 
 <!-- Form Hidden Values -->
-<input type="hidden" name="package" id="package" value="EFPREMIUM" />
+<input type="hidden" name="package" id="package" value="EFPREMIUMPLUS" />
 
 <!-- -->
 
@@ -454,6 +475,7 @@ border-bottom: 1px dotted #cccccc;
 <!-- <script type="text/javascript" src="https://et.ef-cdn.com/etc/designs/b2c/2014/checkout/clientlibs.min.js?v=AUdj03zf"></script>
  -->
 
+<script type="text/javascript" src="https://et.ef-cdn.com/etc/designs/b2c/amdmodules/bundle.js"></script>
 
 </div>
 
@@ -497,14 +519,14 @@ border-bottom: 1px dotted #cccccc;
 <a href="../../../about-us/"><i class="icon-launch"></i>關於我們
 </a>
 </li>
-<li>
+<!-- <li>
 <a href="../../../privacy-policy/"><i class="icon-launch"></i>隱私權聲明
 </a>
-</li>
-<li>
+</li> -->
+<!-- <li>
 <a href="../../../terms-and-conditions/"><i class="icon-launch"></i>條款與政策
 </a>
-</li>
+</li> -->
 <li>
 <a href="../../../sitemap/"><i class="icon-launch"></i>網站地圖
 </a>
